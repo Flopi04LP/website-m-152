@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.carousel-item img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    height: 100vh;
+  }
+ #white{
+     color: white;
+ }
+ .blue{
+   background-color:lightblue;
+ }
+
