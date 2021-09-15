@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Website about me">
+    <meta name="author" content="Flo">
+
+    <title>Flo Website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="" rel="stylesheet">
+    <script href></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar-black" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">FB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home. </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="bootstrap.html">bootstrap.<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jquary.html">jQuery. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jquaryOut.html">jQueryOut. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rain.html">rain. </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="mouse.html">mouse. </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="canvas.html">canvas. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="player.html">player. </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="sound.html">sound. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">video. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="youtube.html">youtube. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="background.html">background. </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pic.html">picture. </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-5">
+                <audio controls autoplay class="audio">
+                    <source src="audio/Epic_Unease.mp3" type="audio/mpeg">
+                </audio>
+                
+            </div>
+
+            <div class="col-2" bg-info><h1>Drücke die Tasten 123, pgup, pgdn, left and right</h1></div>
+        </div>
+        <h1></h1>
+        <script>
+            $(document).ready(function () {
+              const start = new Audio("audio/Epic_Unease.mp3");
+              $audio.volume = 0.5;
+              start.play();
+            });
+            $(document).keydown(function (e) {
+              switch (e.which) {
+                case 37: const left = new Audio("audio/left.mp3");
+                  left.play();
+                  break;
+                case 38: const moveUp = new Audio("audio/moveUp.mp3");
+                  moveUp.play();
+                  break;
+                case 39: const right = new Audio("audio/right.mp3");
+                  right.play(); break;
+                case 40: const moveDown = new Audio("audio/moveDown.mp3");
+                  moveDown.play(); break;
+                case 49: const numberOne = new Audio("audio/numberOne.mp3");
+                  numberOne.play(); break;
+                case 50: const numberTwo = new Audio("audio/numberTwo.mp3");
+                  numberTwo.play(); break;
+                case 51: const numberThree = new Audio("audio/numberThree.mp3");
+                  numberThree.play(); break;
+                default: break;
+              }
+      
+            });
+          </script>
+</body>
+
+
+</html>
